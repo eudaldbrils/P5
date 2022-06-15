@@ -33,6 +33,10 @@ permitan visualizar el funcionamiento de la curva ADSR.
   haya mantenimiemto y el sonido se apague lentamente.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
     * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
+
+
+    *![imagen](https://user-images.githubusercontent.com/91128741/173882873-42ca9f5c-3bc2-4565-a5d7-3414a8ee5ef2.png)
+
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución
 	  abrupta del sonido hasta su finalización.
 	  
