@@ -35,6 +35,8 @@ permitan visualizar el funcionamiento de la curva ADSR.
     * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución
 	  abrupta del sonido hasta su finalización.
+	  ![imagen](https://user-images.githubusercontent.com/91128741/173879025-503bb6ae-aca7-4f99-90a1-b5d26dbe75a1.png)
+
   - Debera representar en esta memoria **ambos** posibles finales de la nota.
 * Un instrumento *plano*, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En
   ellos, el ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la
