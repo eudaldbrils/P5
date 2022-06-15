@@ -49,7 +49,7 @@ permitan visualizar el funcionamiento de la curva ADSR.
   ellos, el ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la
   liberación también es bastante rápida.
   
-      ![imagen](https://user-images.githubusercontent.com/91128741/173882873-42ca9f5c-3bc2-4565-a5d7-3414a8ee5ef2.png)
+   ![imagen](https://user-images.githubusercontent.com/91128741/173882873-42ca9f5c-3bc2-4565-a5d7-3414a8ee5ef2.png)
 
 Para los cuatro casos, deberá incluir una gráfica en la que se visualice claramente la curva ADSR. Deberá
 añadir la información necesaria para su correcta interpretación, aunque esa información puede reducirse a
