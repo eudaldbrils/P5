@@ -61,6 +61,75 @@ Implemente el instrumento `Seno` tomando como modelo el `InstrumentDumb`. La se�
 mediante búsqueda de los valores en una tabla.
 
 - Incluya, a continuación, el código del fichero `seno.cpp` con los métodos de la clase Seno.
+```c++
+#include <iostream>
+#include <math.h>
+#include "seno.h"
+#include "keyvalue.h"
+
+#include <stdlib.h>
+
+using namespace upc;
+using namespace std;
+
+Seno::Seno(const std::string &param) : adsr(SamplingRate, param) {
+  bActive = false;
+  x.resize(BSIZE);
+
+  KeyValue kv(param);
+  int N;
+  if (!kv.to_int("N",N))
+    N = 40; //default value
+  FILE *f;
+  f = fopen("taula.log","a");
+  tbl.resize(N);
+  float phase = 0, step = 2 * M_PI /(float) N;
+  index = 0;
+  for (int i=0; i < N ; ++i) {
+    tbl[i] = sin(phase);
+    fprintf(f,"%f\n",tbl[i]);
+    phase += step;
+  }
+  fclose(f);
+}
+void Seno::command(long cmd, long note, long vel) {
+  if (cmd == 9) {		//'Key' pressed: attack begins
+    bActive = true;
+    adsr.start();
+    phase = 0;
+    float F0=440.0*pow(2,(((float)note-69.0)/12.0))/SamplingRate; 
+    A=vel/128.0;
+    step=2*M_PI*F0;
+    cout << step;
+  }
+  else if(cmd==0 || cmd==8){
+    adsr.stop();
+  }
+}
+const vector<float> & Seno::synthesize() {
+  if (not adsr.active()) {
+    x.assign(x.size(), 0);
+    bActive = false;
+    return x;
+  }   
+  else if (not bActive)
+    return x;
+
+  FILE *fp;
+  fp = fopen("xvec.log","a");
+  for (unsigned int i=0; i<x.size(); ++i) {
+    x[i] = 0.3*A*sin(phase);
+    fprintf(fp,"%f\n",x[i]);
+    phase = phase + step;
+    while(phase>2*M_PI)
+      phase = phase - 2*M_PI;
+  }
+  adsr(x); //apply envelope to x and update internal status of ADSR
+  fclose(fp);
+  return x;
+}
+
+```
 - Explique qué método se ha seguido para asignar un valor a la señal a partir de los contenidos en la tabla,
   e incluya una gráfica en la que se vean claramente (use pelotitas en lugar de líneas) los valores de la
   tabla y los de la señal generada.
