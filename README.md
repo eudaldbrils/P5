@@ -142,6 +142,9 @@ const vector<float> & Seno::synthesize() {
   sinusoidal. Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e
   índice de modulación) en la señal generada (se valorará que la explicación esté contenida en las propias
   gráficas, sin necesidad de *literatura*).
+  
+  ![imagen](https://user-images.githubusercontent.com/91128741/174129766-2717f9b5-3376-4dde-ae25-b51f08ac7b0f.png)
+
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué
   resultado ha producido. Incluya, en el directorio `work/ejemplos`, los ficheros necesarios para apreciar
   el efecto, e indique, a continuación, la orden necesaria para generar los ficheros de audio usando el
