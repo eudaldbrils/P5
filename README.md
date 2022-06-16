@@ -27,13 +27,21 @@ permitan visualizar el funcionamiento de la curva ADSR.
 
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus
   parámetros: ataque (A), caída (D), mantenimiento (S) y liberación (R).
-![imagen](https://user-images.githubusercontent.com/91128741/173879200-8da346f9-a358-4fbd-88da-84601259f5ba.png)
+  
+  En este caso se observa una envolvente ADSR genérica. Al principio aparece el ataque que es el trozo creciente de la gráfica, seguidamente aparece la caída que sucede después del ataque. Mientras el músico no libera la nota que está tocando esta se mantiene a una cierta intensidad, este tramo se llama de mantenimiento. Cúando el músico libera la nota aparece el tramo de liberación donde la onda se extinge. 
+  
+![imagen](https://user-images.githubusercontent.com/91128741/174171564-c4eab114-60c0-4b75-b88d-247d58a46ec9.png)
+
 
 * Un instrumento *percusivo*, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no
   haya mantenimiemto y el sonido se apague lentamente.
+  
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
+  - 
     * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
-![imagen](https://user-images.githubusercontent.com/91128741/173887912-380d1ca7-c3f8-48d1-8f6a-418bedd28294.png)
+	
+	En este caso se observa como el músico mantiene la nota pulsada hasta la desaparición del sonido, la nota después del ataque desciende sin mantenimiento. Se llega a la extinción natural del sonido.
+![imagen](https://user-images.githubusercontent.com/91128741/174170420-e343556d-32d1-42db-9e7d-562496228805.png)
 
 
 
@@ -41,15 +49,19 @@ permitan visualizar el funcionamiento de la curva ADSR.
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución
 	  abrupta del sonido hasta su finalización.
 	  
+	  En este caso, en cambio, se ve como no aparece el estado de mantenimiento ni el de liberación. Eso es debido a que el músico ha decidido parar de golpe el sonido y por lo tanto no se ha llegado a la extinción natural del sonido.
 	  
-	  ![imagen](https://user-images.githubusercontent.com/91128741/173879025-503bb6ae-aca7-4f99-90a1-b5d26dbe75a1.png)
+	 ![imagen](https://user-images.githubusercontent.com/91128741/174172151-8377f368-c1ad-461f-bb78-090cb4b81d0d.png)
+
 
   - Debera representar en esta memoria **ambos** posibles finales de la nota.
 * Un instrumento *plano*, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En
   ellos, el ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la
   liberación también es bastante rápida.
   
-   ![imagen](https://user-images.githubusercontent.com/91128741/173882873-42ca9f5c-3bc2-4565-a5d7-3414a8ee5ef2.png)
+  Por otro lado, los instrumentos de viento no tienen el tramo de caída, simplemente se desvanece el sonido cuando se termina la nota.
+  
+![imagen](https://user-images.githubusercontent.com/91128741/174173462-8793d23c-7ee7-4f65-afe5-73bd5e533eb8.png)
 
 Para los cuatro casos, deberá incluir una gráfica en la que se visualice claramente la curva ADSR. Deberá
 añadir la información necesaria para su correcta interpretación, aunque esa información puede reducirse a
@@ -133,6 +145,13 @@ const vector<float> & Seno::synthesize() {
 - Explique qué método se ha seguido para asignar un valor a la señal a partir de los contenidos en la tabla,
   e incluya una gráfica en la que se vean claramente (use pelotitas en lugar de líneas) los valores de la
   tabla y los de la señal generada.
+  
+  La tabla simplemente guarda en un vector de N posiciones sin(2*pi/N) y cada posición que se avanza corresponde a variar el argumento. float phase = 0, step = 2 * M_PI /(float) N;
+phase += step;
+
+Para crear el instrumento Seno se necesita que la fase del seno empiece por 0. Para empezar se debe introducir la f0 a la que se trabaja, utilizamos la siguiente fórmula: Note=69+12·log2(f0/440) y aislamos f0. Se pone valor a la variable step, este valor nos ayudará a iterar el argumento del seno cuando se utiliza la sintetización.
+  
+
 - Si ha implementado la síntesis por tabla almacenada en fichero externo, incluya a continuación el código
   del método `command()`.
 
