@@ -144,11 +144,17 @@ const vector<float> & Seno::synthesize() {
   gráficas, sin necesidad de *literatura*).
   Tremolo
   ![imagen](https://user-images.githubusercontent.com/91128741/174166406-6c8e0572-e9e0-4b9f-a435-bc3b64cd0b6a.png)
+  
+  Vibrato
+  
+  ![imagen](https://user-images.githubusercontent.com/91128741/174167281-194cc274-f70a-4e79-9623-aa6c7a14e343.png)
+
 	
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué
   resultado ha producido. Incluya, en el directorio `work/ejemplos`, los ficheros necesarios para apreciar
   el efecto, e indique, a continuación, la orden necesaria para generar los ficheros de audio usando el
   programa `synth`.
+  
 
 ### Síntesis FM.
 
