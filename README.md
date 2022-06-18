@@ -166,7 +166,7 @@ Para crear el instrumento Seno se necesita que la fase del seno empiece por 0. P
   
   Vibrato
   
-  ![imagen](https://user-images.githubusercontent.com/91128741/174167281-194cc274-f70a-4e79-9623-aa6c7a14e343.png)
+  ![image](https://user-images.githubusercontent.com/91085077/174452629-0ef1e3af-6a1f-4006-bb57-16ceb93696a4.png)
 
 	
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué
