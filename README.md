@@ -187,8 +187,15 @@ deberá venir expresado en semitonos.
   El resulatado se ha obtenido aplicando el siguiente comando:
   ![image](https://user-images.githubusercontent.com/91085077/174477193-75d31691-9225-43a8-aa2e-0b0934361659.png)
   
-  La gráfica es la siguiente:
+  Con los siguientes parámetros
   
+  ![image](https://user-images.githubusercontent.com/91085077/174487275-60897193-efcb-4571-98ef-e8ff2771a9c5.png)
+  
+  y en la nota 60, sa gráfica obtenida es la siguiente:
+  
+  ![image](https://user-images.githubusercontent.com/91085077/174487244-bb4d359d-0201-49fa-844d-a635a08d9072.png)
+  ![image](https://user-images.githubusercontent.com/91085077/174487263-4580c397-e47b-4896-9703-cf3dc69ec46c.png)
+
   
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del
   sonido (N1, N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas
