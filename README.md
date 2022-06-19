@@ -196,7 +196,7 @@ El resultado obtenido es el siguiente:
   
   Vibrato
   
-  ![image](https://user-images.githubusercontent.com/91085077/174452629-0ef1e3af-6a1f-4006-bb57-16ceb93696a4.png)
+![image](https://user-images.githubusercontent.com/91085077/174492690-797556df-de70-4b40-8291-983f584b02ed.png)
 
 	
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué
