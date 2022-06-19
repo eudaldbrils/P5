@@ -194,6 +194,16 @@ deberá venir expresado en semitonos.
   sonido (N1, N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas
   diatónicas (fichero `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y
   `work/doremi/campana.work`.
+  
+  Los parámetros utilizados para la campana son los siguientes:
+  
+  ![image](https://user-images.githubusercontent.com/91085077/174478480-fe9bd1b7-1982-41ff-8373-860f456ac257.png)
+  
+  Los parámetros utilizados para el clarinete son los siguientes:
+  
+  ![image](https://user-images.githubusercontent.com/91085077/174478467-cfa8e294-e402-400c-9728-3be04af0614a.png)
+  
+  Los ficheros resultantes se pueden encontrar encontrar en la carpeta mencionada por el enunciado
   * También puede colgar en el directorio work/doremi otras escalas usando sonidos *interesantes*. Por
     ejemplo, violines, pianos, percusiones, espadas láser de la
 	[Guerra de las Galaxias](https://www.starwars.com/), etc.
@@ -206,9 +216,17 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 
 - En este triste arreglo, la pista 1 corresponde al instrumento solista (puede ser un piano, flautas,
   violines, etc.), y la 2 al bajo (bajo eléctrico, contrabajo, tuba, etc.).
+  Los instrumentos utilizados y los parámetros para crearlos son los siguientes:
+  
+  ![image](https://user-images.githubusercontent.com/91085077/174479456-36bea4c4-99e3-4b6a-88e7-369813a487bd.png)
+
+
 - Coloque el resultado, junto con los ficheros necesarios para generarlo, en el directorio `work/music`.
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos
   necesarios están en directorio indicado).
+  
+  ![image](https://user-images.githubusercontent.com/91085077/174479481-7fb19919-6707-4352-9589-ee0ee13ad542.png)
+
 
 También puede orquestar otros temas más complejos, como la banda sonora de *Hawaii5-0* o el villacinco de
 John Lennon *Happy Xmas (War Is Over)* (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción
