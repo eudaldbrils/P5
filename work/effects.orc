@@ -1,1 +1,1 @@
-1	Tremolo	fm=12; A=0.10;
+1	Vibrato I=24; fm=2000;
