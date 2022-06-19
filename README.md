@@ -172,7 +172,7 @@ const vector<float> &Instrumentseno::synthesize()
   e incluya una gráfica en la que se vean claramente (use pelotitas en lugar de líneas) los valores de la
   tabla y los de la señal generada.
   
-  La tabla simplemente guarda en un vector de N posiciones sin(2*pi/N) y cada posición que se avanza corresponde a variar el argumento. float phase = 0, step = 2 * M_PI /(float) N;
+  La tabla simplemente guarda en un vector de N posiciones sin(2*pi/N) y cada posición que se avanza corresponde a variar el argumento. float phas = 0, step = 2 * M_PI /(float) N;
 phase += step;
 
 Para crear el instrumento Seno se necesita que la fase del seno empiece por 0. Para empezar se debe introducir la f0 a la que se trabaja, utilizamos la siguiente fórmula: Note=69+12·log2(f0/440) y aislamos f0. Se pone valor a la variable step, este valor nos ayudará a iterar el argumento del seno cuando se utiliza la sintetización.
