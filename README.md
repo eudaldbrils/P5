@@ -176,6 +176,10 @@ const vector<float> &Instrumentseno::synthesize()
 phase += step;
 
 Para crear el instrumento Seno se necesita que la fase del seno empiece por 0. Para empezar se debe introducir la f0 a la que se trabaja, utilizamos la siguiente fórmula: Note=69+12·log2(f0/440) y aislamos f0. Se pone valor a la variable step, este valor nos ayudará a iterar el argumento del seno cuando se utiliza la sintetización.
+
+El resultado obtenido es el siguiente:
+
+![image](https://user-images.githubusercontent.com/91085077/174492438-8cbe904b-60c1-451b-b2a5-282376801983.png)
   
 
 - Si ha implementado la síntesis por tabla almacenada en fichero externo, incluya a continuación el código
