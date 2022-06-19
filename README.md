@@ -184,6 +184,12 @@ deberá venir expresado en semitonos.
 
 - Use el instrumento para generar un vibrato de *parámetros razonables* e incluya una gráfica en la que se
   vea, claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
+  El resulatado se ha obtenido aplicando el siguiente comando:
+  ![image](https://user-images.githubusercontent.com/91085077/174477193-75d31691-9225-43a8-aa2e-0b0934361659.png)
+  
+  La gráfica es la siguiente:
+  
+  
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del
   sonido (N1, N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas
   diatónicas (fichero `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y
