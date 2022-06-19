@@ -218,7 +218,7 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
   violines, etc.), y la 2 al bajo (bajo eléctrico, contrabajo, tuba, etc.).
   Los instrumentos utilizados y los parámetros para crearlos son los siguientes:
   
-  ![image](https://user-images.githubusercontent.com/91085077/174479456-36bea4c4-99e3-4b6a-88e7-369813a487bd.png)
+![image](https://user-images.githubusercontent.com/91085077/174483966-96c6e51f-1b2b-451a-bbca-e48be75452b0.png)
 
 
 - Coloque el resultado, junto con los ficheros necesarios para generarlo, en el directorio `work/music`.
